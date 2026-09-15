@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Academic website of Thomaz Novais Rocha, Postdoctoral Researcher at Pontificia Universidad Católica de Chile.">
   <title>Thomaz Novais Rocha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="index.html">Thomaz Novais Rocha</a>
+<header class="site-header">
+  <div class="wrap top-nav">
     <nav aria-label="Primary navigation">
       <a class="active" href="index.html">Home</a>
       <a href="publications.html">Publications</a>
@@ -19,46 +23,57 @@
     </nav>
   </div>
 </header>
+
 <main>
   <div class="wrap">
-    <div class="hero">
-      <div><img class="photo" src="assets/thomaz.jpg" alt="Thomaz Novais Rocha"></div>
-      <div>
-        <h1>Thomaz Novais Rocha</h1>
+    <section class="intro-section">
+      <div class="intro-copy">
+        <h1><strong>Thomaz</strong> Novais Rocha</h1>
         <p class="role">Postdoctoral Researcher</p>
-        <p class="affil">Pontificia Universidad Católica de Chile · Santiago, Chile</p>
-        <p>I am a Postdoctoral Researcher at Pontificia Universidad Católica de Chile and hold a PhD in Business Administration from FGV EAESP, Brazil. My research lies at the intersection of social entrepreneurship, business ethics, and entrepreneurship, with particular interest in how entrepreneurs navigate ethical tensions, develop resources and capabilities, and create social value. My current research examines the interplay between ethical decision-making and social value creation in social enterprises, building on my doctoral research on how social entrepreneurs develop intangible capitals through social impact accelerators.</p>
-        <div class="links">
-          <a href="mailto:thomaz.novais@uc.cl">Email</a>
-          <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=ff-VyqAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/thomaznr/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="http://lattes.cnpq.br/4488972734189417" target="_blank" rel="noopener">Lattes</a>
-          <a href="assets/Thomaz_Novais_Rocha_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
+        <p class="affil">Pontificia Universidad Católica de Chile, Santiago, Chile</p>
+
+        <div class="bio">
+          <p>I am a Postdoctoral Researcher at Pontificia Universidad Católica de Chile and hold a PhD in Business Administration from FGV EAESP, Brazil. My research focuses on social entrepreneurship, business ethics, entrepreneurial behavior, and entrepreneurial support.</p>
         </div>
       </div>
-    </div>
 
-    <section>
-      <h2>Research Interests</h2>
-      <div class="grid-2">
-        <div class="card"><h3>Social Entrepreneurship</h3><p>Social entrepreneurial behavior, social value creation, and the tensions involved in pursuing social and commercial objectives.</p></div>
-        <div class="card"><h3>Business Ethics & Ethical Decision-Making</h3><p>How ethical considerations shape entrepreneurial decisions and organizational responses in social enterprises.</p></div>
-        <div class="card"><h3>Entrepreneurial Support & Ecosystems</h3><p>How accelerators, support organizations, and entrepreneurial ecosystems contribute to entrepreneurs’ development and venture outcomes.</p></div>
-        <div class="card"><h3>Entrepreneurial Behavior</h3><p>Entrepreneurial identity, passion, alertness, and the individual-level foundations of entrepreneurial action.</p></div>
-      </div>
+      <aside class="profile-panel" aria-label="Profile links">
+        <img class="photo" src="assets/thomaz.jpg" alt="Thomaz Novais Rocha">
+        <div class="contact-icons">
+          <a href="mailto:thomaz.novais@uc.cl" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/thomaznr/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=ff-VyqAAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="assets/Thomaz_Novais_Rocha_CV.pdf" target="_blank" rel="noopener" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fa-solid fa-briefcase"></i></a>
+        </div>
+      </aside>
     </section>
 
     <section>
       <h2>Academic Positions</h2>
-      <div class="timeline"><div><div class="where">Pontificia Universidad Católica de Chile</div><div class="what">Postdoctoral Researcher</div></div><div class="when">2025–present</div></div>
-      <div class="timeline"><div><div class="where">Christus University (Unichristus), Brazil</div><div class="what">Lecturer and Researcher</div></div><div class="when">2023–2024</div></div>
-      <div class="timeline"><div><div class="where">University of Fortaleza (Unifor), Brazil</div><div class="what">Guest Lecturer, MBA Programs</div></div><div class="when">2022–present</div></div>
+      <div class="position-row">
+        <div><strong>Pontificia Universidad Católica de Chile</strong><br><span>Santiago, Chile</span></div>
+        <div><strong>Postdoctoral Researcher</strong><br><span>2025 – present</span></div>
+      </div>
+      <div class="position-row">
+        <div><strong>University of Fortaleza (Unifor)</strong><br><span>Fortaleza, Brazil</span></div>
+        <div><strong>Guest Lecturer, MBA Programs</strong><br><span>2022 – present</span></div>
+      </div>
+      <div class="position-row">
+        <div><strong>Christus University (Unichristus)</strong><br><span>Fortaleza, Brazil</span></div>
+        <div><strong>Lecturer and Researcher</strong><br><span>2023 – 2024</span></div>
+      </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div class="timeline"><div><div class="where">FGV EAESP</div><div class="what">PhD in Business Administration</div></div><div class="when">2024</div></div>
-      <div class="timeline"><div><div class="where">University of Fortaleza (Unifor)</div><div class="what">MSc in Business Administration</div></div><div class="when">2019</div></div>
+      <div class="position-row">
+        <div><strong>FGV EAESP</strong><br><span>São Paulo, Brazil</span></div>
+        <div><strong>PhD in Business Administration</strong><br><span>2024</span></div>
+      </div>
+      <div class="position-row">
+        <div><strong>University of Fortaleza (Unifor)</strong><br><span>Fortaleza, Brazil</span></div>
+        <div><strong>MSc in Business Administration</strong><br><span>2019</span></div>
+      </div>
     </section>
 
     <section>
@@ -72,6 +87,7 @@
     </section>
   </div>
 </main>
+
 <footer><div class="wrap">© 2026 Thomaz Novais Rocha</div></footer>
 </body>
 </html>
